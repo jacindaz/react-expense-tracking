@@ -1,0 +1,17 @@
+I"Y(function() {
+  this.Records = React.createClass({
+    render: function() {
+      return React.DOM.div({
+        className: 'records'
+      }, React.DOM.h2({
+        className: 'title'
+      }, 'Records'), {
+        className: 'records'
+      }, React.DOM.p({
+        className: 'content'
+      }, 'Hello, world!'));
+    }
+  });
+
+}).call(this);
+:ET
