@@ -280,3 +280,1094 @@ Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-20 08:49:33 -0400
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for ::1 at 2015-07-24 06:45:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 41ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for ::1 at 2015-07-24 06:46:02 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.2ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 440ms (Views: 436.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/record_form" for ::1 at 2015-07-24 06:47:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/record_form"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (29.3ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.7ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (73.9ms)
+
+
+Started GET "/records" for ::1 at 2015-07-24 06:48:54 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/components/record_form.self-4086c7d2fb5377d982625c25a1eceabdbaa09d0f1c25efb296df9cf2f9b0a03f.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 06:48:54 -0400
+
+
+Started GET "/records/new" for ::1 at 2015-07-24 06:48:59 -0400
+Processing by RecordsController#new as HTML
+  Rendered records/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records/new" for ::1 at 2015-07-24 06:49:17 -0400
+Processing by RecordsController#new as HTML
+  Rendered records/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components/record_form.self-4086c7d2fb5377d982625c25a1eceabdbaa09d0f1c25efb296df9cf2f9b0a03f.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/records/new" for ::1 at 2015-07-24 06:49:18 -0400
+Processing by RecordsController#new as HTML
+  Rendered records/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components/record_form.self-4086c7d2fb5377d982625c25a1eceabdbaa09d0f1c25efb296df9cf2f9b0a03f.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 06:49:18 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 06:50:21 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/components/record_form.self-4086c7d2fb5377d982625c25a1eceabdbaa09d0f1c25efb296df9cf2f9b0a03f.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 06:50:21 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 06:50:22 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/components/record_form.self-4086c7d2fb5377d982625c25a1eceabdbaa09d0f1c25efb296df9cf2f9b0a03f.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 06:50:22 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:03:34 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 66ms (Views: 61.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/components/record_form.self-4086c7d2fb5377d982625c25a1eceabdbaa09d0f1c25efb296df9cf2f9b0a03f.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:03:34 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:04:20 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 110ms (Views: 109.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/components/record_form.self-dd5014830246190bfde73351fdc211b12d6b8c04b686ec5fbcda7d0dd32aa152.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:04:21 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:04:57 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/components/record_form.self-dd5014830246190bfde73351fdc211b12d6b8c04b686ec5fbcda7d0dd32aa152.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:04:57 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:05:04 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/components/record_form.self-dd5014830246190bfde73351fdc211b12d6b8c04b686ec5fbcda7d0dd32aa152.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:05:05 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:05:08 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/components/record_form.self-dd5014830246190bfde73351fdc211b12d6b8c04b686ec5fbcda7d0dd32aa152.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:05:09 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:05:49 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/components/record_form.self-dd5014830246190bfde73351fdc211b12d6b8c04b686ec5fbcda7d0dd32aa152.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:05:49 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:06:02 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/components/record_form.self-dd5014830246190bfde73351fdc211b12d6b8c04b686ec5fbcda7d0dd32aa152.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/components/records.self-aedf8b6946c6e90983f238ef4948e07021d8e40182a21959a411616b30c2bdad.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:06:02 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:24:36 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 403ms (Views: 402.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/components/records.self-b398605f88da914ce21a243bf6f89e7d7af58231f7f4fdf1878095916d320471.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/components/record_form.self-ae3b6c8c842d9aa6e93815dd50031338b72924645947b5adccec7a667cdaaad3.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:24:36 -0400
+
+
+Started GET "/records" for ::1 at 2015-07-24 07:24:54 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/components/record_form.self-ae3b6c8c842d9aa6e93815dd50031338b72924645947b5adccec7a667cdaaad3.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/components/records.self-b398605f88da914ce21a243bf6f89e7d7af58231f7f4fdf1878095916d320471.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-24 07:24:54 -0400
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-26 07:55:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jacindazhong/.rbenv/versions/2.1.6/lib/ruby/gems/2.1.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 45ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 07:55:27 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.2ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 505ms (Views: 499.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 292ms (Views: 291.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/components/record_form.self-995347196f427f477315d02f51e62b7103ffa68e12af4abb6e4d7fcfefba4d22.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/components/records.self-b398605f88da914ce21a243bf6f89e7d7af58231f7f4fdf1878095916d320471.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-26 08:06:46 -0400
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 469ms (Views: 468.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/components/amount_box.self-f41ed45e33514a3cf4a87902ff6c9425149d4afed82a247ea08d4952288df5cc.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/components/record_form.self-7f97db8bd0b37bc63710f870859cf33efb6dc6ee1c5c669ad5c9da0d8febddb7.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/components/records.self-2b6ed8b27409e0be89e96902cdd29523935deebbb5f27f748179387f7ca33665.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-26 09:07:44 -0400
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/components/amount_box.self-f41ed45e33514a3cf4a87902ff6c9425149d4afed82a247ea08d4952288df5cc.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/components/record_form.self-7f97db8bd0b37bc63710f870859cf33efb6dc6ee1c5c669ad5c9da0d8febddb7.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/components/records.self-2b6ed8b27409e0be89e96902cdd29523935deebbb5f27f748179387f7ca33665.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-26 09:13:50 -0400
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.1ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 292ms (Views: 291.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/components/records.self-be0adb5576e25cc9c85ef2bbc103b42a835efa5be966aa9958ba7fea38b76c92.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/components/amount_box.self-f41ed45e33514a3cf4a87902ff6c9425149d4afed82a247ea08d4952288df5cc.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/components/record_form.self-995347196f427f477315d02f51e62b7103ffa68e12af4abb6e4d7fcfefba4d22.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:10 -0400
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.1ms)[0m  [1mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 269ms (Views: 268.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/components/records.self-c4501bacc50b2226319850d687f384c6f304f8f905c4a0f97da04be6f0855963.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/components/amount_box.self-f41ed45e33514a3cf4a87902ff6c9425149d4afed82a247ea08d4952288df5cc.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/components/record.self-a470575902de1e1add4fa2c373a0baf9534491c9e62e06f04792df36d6245b22.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/components/record_form.self-995347196f427f477315d02f51e62b7103ffa68e12af4abb6e4d7fcfefba4d22.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-26 09:20:26 -0400
+
+
+Started POST "/records" for 127.0.0.1 at 2015-07-26 09:21:06 -0400
+Processing by RecordsController#create as JSON
+  Parameters: {"record"=>{"title"=>"Record 3", "date"=>"2015-07-26", "amount"=>"50"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "records" ("title", "amount", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Record 3"], ["amount", 50.0], ["date", "2015-07-26"], ["created_at", "2015-07-26 13:21:06.854055"], ["updated_at", "2015-07-26 13:21:06.854055"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 38ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2015-07-26 09:21:26 -0400
+Processing by RecordsController#create as JSON
+  Parameters: {"record"=>{"title"=>"Record 4", "date"=>"2015-07-26", "amount"=>"100"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "records" ("title", "amount", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Record 4"], ["amount", 100.0], ["date", "2015-07-26"], ["created_at", "2015-07-26 13:21:26.948694"], ["updated_at", "2015-07-26 13:21:26.948694"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2015-07-26 10:12:31 -0400
+Processing by RecordsController#index as HTML
+  [1m[35mRecord Load (0.3ms)[0m  SELECT "records".* FROM "records"
+  Rendered records/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 206ms (Views: 197.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/components/record.self-e141b3b52e8d55abff15d0cedb20b6804cb06b49825bd7da71270da91ded6ff1.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/components/records.self-4f119db9b53c4ed84d089593c9fbc4284a399cc375d3c06a2b21b5edebd66098.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/application.self-25cc238f6eaae6a7dd365192fae2797df48ed80a7cd073a13f2a9bc1f0ba48e9.css?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/react_ujs.self-9e59229b64f3630c4c2a3811ede5c049c720faf2cb91112e255eead642284727.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/components/amount_box.self-f41ed45e33514a3cf4a87902ff6c9425149d4afed82a247ea08d4952288df5cc.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/components/record_form.self-ae3b6c8c842d9aa6e93815dd50031338b72924645947b5adccec7a667cdaaad3.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/utils.self-12efc8063f34a54df819840c0cb4ea73c0807ebe3d6515cf490850f3a281448b.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-07-26 10:12:32 -0400
